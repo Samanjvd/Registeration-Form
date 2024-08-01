@@ -1,32 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>form</title>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
     <div class="container">
-      <form action="">
+      <div class="text-head">
         <h1>اطلاعات کاربری</h1>
-        <div>
-          <input type="text">
-          <input type="text">
+      </div>
+
+      <form class="form">
+        <div class="form-input fullname">
+          <input type="text" placeholder="نام" class="input input-name" />
+          <input
+            type="text"
+            placeholder="نام خانوادگی"
+            class="input input-name"
+          />
         </div>
-        <input type="text">
-        <label for="">
-          <input type="radio">
-          <input type="radio">
-        </label>
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="week">
+
+        <div class="form-input">
+          <input
+            type="date"
+            placeholder="تاریخ تولد"
+            class="date-input input"
+          />
+        </div>
+
+        <div class="form-input gender">
+          <label>جنسیت</label>
+          <div class="fullname-input">
+            <input type="radio" class="gender-confirm-m" />
+            <label for="gender-confirm">آقا</label>
+          </div>
+          <div class="fullname-input">
+            <input type="radio" class="gender-confirm-w" />
+            <label for="gender-confirm-w">خانم</label>
+          </div>
+        </div>
+
+        <div class="form-input">
+          <input type="tel" placeholder="شماره تلفن همراه" class="input" />
+        </div>
+
+        <div class="form-input">
+          <input type="tel" placeholder="تلفن ثابت" class="input" />
+        </div>
+
+        <div class="form-input">
+          <input type="number" placeholder="شماره شبا کارت" class="input" />
+        </div>
+
+        <div class="form-input">
+          <input type="number" placeholder="کد ملی" class="input" />
+        </div>
+
+        <div class="form-input">
+          <input type="email" placeholder="پست الکترونیکی" class="input" />
+        </div>
+
+        <div class="form-input">
+          <input type="number" placeholder="کد پستی" class="input" />
+        </div>
+
+        <textarea placeholder="آدرس" class="input"></textarea>
       </form>
     </div>
-</body>
+  </body>
 </html>

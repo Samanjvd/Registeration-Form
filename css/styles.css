@@ -1,0 +1,101 @@
+@font-face {
+    font-family: shabnam;
+    src: url(/fonts/Shabnam.woff)format('woff');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: shabnam;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E0E0;
+}
+
+.input{
+    font-family: shabnam;
+}
+
+.input[type='tel']::placeholder{
+    direction: rtl;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: #fafafa;
+    padding: 50px;
+}
+
+.input{
+    padding: 8px;
+    width: 100%;
+    font-size: 12px;
+}
+
+input.input-name {
+    padding: 8px;
+    font-size: 12px;
+}
+
+.text-head {
+    font-size: 12px;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+}
+
+form.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+textarea.input {
+    height: 5rem;
+}
+
+.gender{
+    display: flex;
+    gap: 30px;
+}
+
+.fullname {
+    display: flex;
+    gap: 16px;
+}
+
+.input {
+    border-radius: 4px;
+    border: 1px solid #CCC;
+}
+
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type=date]::-webkit-datetime-edit-month-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type="tel"]::-webkit-input-placeholder {
+    text-align: right;
+}
