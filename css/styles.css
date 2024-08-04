@@ -10,7 +10,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: shabnam;
   display: flex;
   align-items: center;
@@ -72,8 +72,8 @@ textarea.input {
 
 .shaba-icon {
   position: absolute;
-  left: 6px;
-  top: 10px;
+  left: 12px;
+  top: 31px;
 }
 
 .gender {
@@ -90,26 +90,6 @@ textarea.input {
   border-radius: 4px;
   border: 1px solid #ccc;
 }
-
-/* input[type=date]::-webkit-datetime-edit-text {
-    -webkit-appearance: none;
-    display: none;
-}
-
-input[type=date]::-webkit-datetime-edit-month-field {
-    -webkit-appearance: none;
-    display: none;
-}
-
-input[type=date]::-webkit-datetime-edit-day-field {
-    -webkit-appearance: none;
-    display: none;
-}
-
-input[type=date]::-webkit-datetime-edit-year-field {
-    -webkit-appearance: none;
-    display: none;
-} */
 
 input[type="tel"]::-webkit-input-placeholder {
   text-align: right;
@@ -131,28 +111,29 @@ input[type="tel"]::-webkit-input-placeholder {
   align-items: center;
 }
 
-button.button {
-  border: 0;
+.label {
   border-radius: 4px;
-  background: none;
-  font-family: shabnam;
   display: flex;
-  padding: 4px 4px 0 4px;
+  padding: 4px 6px;
   gap: 0.3rem;
   color: #fff;
   cursor: pointer;
-
   background: rgba(0, 0, 0, 0.3);
 }
 
-.button-add-img {
-  position: relative;
-  display: block;
-  /* cursor: pointer; */
+.button-addChange {
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-family: shabnam;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.lable-add-img {
-  /* cursor: pointer; */
+.input-add-img {
+  display: none;
+  cursor: pointer;
 }
 
 .input-file {
@@ -162,7 +143,8 @@ button.button {
   opacity: 0;
   cursor: pointer;
 }
-.button:active {
+
+.label-add-img:active {
   background-color: #00acc1;
 }
 
@@ -172,15 +154,20 @@ button.button {
   margin-top: 1rem;
 }
 
-.button-addChange {
-  border: 0;
-  border-radius: 4px;
-  font-family: shabnam;
-  display: flex;
-  padding: 6px 10px;
-  gap: 0.3rem;
-  color: #fff;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+.email:invalid {
+  border: 2px solid red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.label-input {
+  font-size: smaller;
 }

@@ -18,67 +18,57 @@
             class="img"
           />
           <div class="profile-button">
-            <button type="button" class="button" title="حذف  فایل">
-              <span class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
-                  />
-                </svg>
-              </span>
+            <label role="button" class="label del-img" title="حذف  فایل">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
               حذف عکس
-            </button>
-
-            <div>
-              <label class="lable-add-img">
-                <span class="button-add-img">
-                  <input
-                    class="input-file"
-                    type="file"
-                    title="انتخاب فایل"
-                    accept="image/jpg , image/png , image/jpeg"
-                    name="profileImage"
-                  />
-                </span>
-                <button type="button" class="button">
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
-                      />
-                    </svg>
-                  </span>
-                  عکس جدید
-                </button>
-              </label>
-            </div>
+            </label>
+            <label class="label add-img" role="button">
+              <span class="input-add-img">
+                <input
+                  class="input-file"
+                  type="file"
+                  title="انتخاب فایل"
+                  accept="image/jpg , image/png , image/jpeg"
+                />
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
+                />
+              </svg>
+              عکس جدید
+            </label>
           </div>
         </div>
       </div>
@@ -113,62 +103,95 @@
           <div class="form-input gender">
             <label>جنسیت</label>
             <div class="fullname-input">
-              <input type="radio" class="gender-confirm-m" />
-              <label for="gender-confirm">آقا</label>
+              <input
+                id="gender-m"
+                type="radio"
+                class="gender-confirm-m"
+                name="gender"
+              />
+              <label for="gender-m">آقا</label>
             </div>
-            <div class="fullname-input">
-              <input type="radio" class="gender-confirm-w" />
-              <label for="gender-confirm-w">خانم</label>
-            </div>
+            <label class="fullname-input">
+              <input type="radio" class="gender-confirm-w" name="gender" />
+              <span>خانم</span>
+            </label>
           </div>
 
           <div class="form-input">
-            <input
-              type="tel"
-              placeholder="شماره تلفن همراه"
-              maxlength="10"
-              class="input"
-            />
+            <label class="label-input">
+              شماره همراه
+              <input
+                id="phoneNum"
+                type="number"
+                placeholder="شماره تلفن همراه"
+                maxlength="10"
+                class="input"
+              />
+            </label>
           </div>
 
           <div class="form-input">
-            <input
-              type="tel"
-              placeholder="تلفن ثابت"
-              maxlength="10"
-              class="input"
-            />
+            <label class="label-input">
+              تلفن ثابت
+              <input
+                type="number"
+                placeholder="تلفن ثابت"
+                maxlength="10"
+                class="input numStatic"
+              />
+            </label>
           </div>
 
           <div class="form-input shaba">
-            <h4 class="shaba-icon">IR</h4>
-            <input
-              type="text"
-              placeholder="شماره شبا کارت"
-              maxlength="24"
-              class="input"
-              required
-            />
+            <h6 class="shaba-icon">IR</h6>
+            <label class="label-input">
+              شماره شبا کارت
+              <input
+                type="number"
+                placeholder="شماره شبا کارت"
+                maxlength="24"
+                class="input shabaNum"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-input">
+            <label class="label-input">
+              کد ملی
+              <input
+                type="number"
+                placeholder="کد ملی"
+                maxlength="10"
+                class="input natianalCode"
+              />
+            </label>
           </div>
 
           <div class="form-input">
-            <input
-              type="text"
-              placeholder="کد ملی"
-              maxlength="10"
-              class="input"
-            />
+            <label class="label-input">
+              پست الکترونیکی
+              <input
+                class="input email"
+                type="email"
+                placeholder="پست الکترونیکی"
+              />
+            </label>
           </div>
 
           <div class="form-input">
-            <input type="email" placeholder="پست الکترونیکی" class="input" />
+            <label class="label-input">
+              کد پستی
+              <input
+                type="number"
+                placeholder="کد پستی"
+                class="input postalCode"
+              />
+            </label>
           </div>
-
-          <div class="form-input">
-            <input type="number" placeholder="کد پستی" class="input" />
-          </div>
-
-          <textarea placeholder="آدرس" class="input"></textarea>
+          <label class="label-input">
+            آدرس
+            <textarea placeholder="آدرس" class="input"></textarea>
+          </label>
         </form>
       </div>
 
