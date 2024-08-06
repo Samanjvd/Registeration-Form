@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="main-container">
       <div>
         <div class="profile">
-          <img
-            src="./img/image.png"
-            alt="img"
-            width="150px"
-            height="150px"
-            class="img"
-          />
-          <div class="profile-button">
-            <label role="button" class="label del-img" title="حذف  فایل">
+          <label class="label-img">
+            <input type="checkbox" class="input-img" />
+            <img
+              src="./img/image.png"
+              alt="img"
+              width="150px"
+              height="150px"
+              class="img"
+            />
+          </label>
+          <div class="profile-label">
+            <label role="button" class="label delete-img" title="حذف  فایل">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -74,51 +77,55 @@
       </div>
       <div>
         <form class="form">
-          <div class="form-input fullname">
-            <input
-              type="text"
-              placeholder="نام"
-              class="input input-name"
-              required
-            />
-            <input
-              type="text"
-              placeholder="نام خانوادگی"
-              class="input input-name"
-              required
-            />
-          </div>
-
-          <div class="form-input">
-            <input
-              type="date"
-              placeholder="تاریخ تولد"
-              class="date-input input"
-            />
-          </div>
-
-          <div class="form-input gender">
-            <label> جنسیت:</label>
-            <div class="fullname-input">
+          <div class="input-form fullname">
+            <label class="label-input">
+              نام
+              <br />
               <input
-                id="gender-m"
-                type="radio"
-                class="gender-confirm-m"
-                name="gender"
+                type="text"
+                placeholder="نام"
+                class="input input-name"
+                required
               />
-              <label for="gender-m">آقا</label>
-            </div>
-            <label class="fullname-input">
-              <input type="radio" class="gender-confirm-w" name="gender" />
-              <span>خانم</span>
+            </label>
+            <label class="label-input">
+              نام خانوادگی
+              <input
+                type="text"
+                placeholder="نام خانوادگی"
+                class="input input-name"
+                required
+              />
             </label>
           </div>
 
-          <div class="form-input">
+          <div class="input-form">
+            <label class="label-input">
+              تاریخ تولد
+              <input
+                type="date"
+                placeholder="تاریخ تولد"
+                class="input date-input"
+              />
+            </label>
+          </div>
+
+          <div class="input-form gender">
+            <label> جنسیت:</label>
+            <label class="gender-input">
+              <input type="radio" class="gender-confirm-male" name="gender" />
+              آقا
+            </label>
+            <label class="gender-input">
+              <input type="radio" class="gender-confirm-female" name="gender" />
+              خانم
+            </label>
+          </div>
+
+          <div class="input-form">
             <label class="label-input">
               شماره همراه
               <input
-                id="phoneNum"
                 type="number"
                 placeholder="شماره تلفن همراه"
                 maxlength="10"
@@ -127,19 +134,19 @@
             </label>
           </div>
 
-          <div class="form-input">
+          <div class="input-form">
             <label class="label-input">
               تلفن ثابت
               <input
                 type="number"
                 placeholder="تلفن ثابت"
                 maxlength="10"
-                class="input numStatic"
+                class="input num-static"
               />
             </label>
           </div>
 
-          <div class="form-input shaba">
+          <div class="input-form shaba">
             <h6 class="shaba-icon">IR</h6>
             <label class="label-input">
               شماره شبا کارت
@@ -147,24 +154,24 @@
                 type="number"
                 placeholder="شماره شبا کارت"
                 maxlength="24"
-                class="input shabaNum"
+                class="input shaba-num"
                 required
               />
             </label>
           </div>
-          <div class="form-input">
+          <div class="input-form">
             <label class="label-input">
               کد ملی
               <input
                 type="number"
                 placeholder="کد ملی"
                 maxlength="10"
-                class="input natianalCode"
+                class="input natianal-code"
               />
             </label>
           </div>
 
-          <div class="form-input">
+          <div class="input-form">
             <label class="label-input">
               پست الکترونیکی
               <input
@@ -175,13 +182,13 @@
             </label>
           </div>
 
-          <div class="form-input">
+          <div class="input-form">
             <label class="label-input">
               کد پستی
               <input
                 type="number"
                 placeholder="کد پستی"
-                class="input postalCode"
+                class="input postal-code"
               />
             </label>
           </div>
@@ -193,7 +200,7 @@
       </div>
 
       <div class="add-change">
-        <button class="button-addChange" type="button">ذخیره تغییرات</button>
+        <button class="button-add-change" type="button">ذخیره تغییرات</button>
       </div>
     </div>
   </body>
