@@ -27,6 +27,7 @@ body {
 }
 
 .main-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: #fafafa;
@@ -91,7 +92,7 @@ textarea.input {
   border: 1px solid #ccc;
 }
 
-input[type="tel"]::-webkit-input-placeholder {
+input[type="number"]::-webkit-input-placeholder {
   text-align: right;
 }
 
@@ -105,7 +106,6 @@ input[type="tel"]::-webkit-input-placeholder {
 
 .profile-label {
   display: flex;
-  border: #26c6da;
   gap: 1rem;
   margin-top: 0.5rem;
   align-items: center;
@@ -131,15 +131,8 @@ input[type="tel"]::-webkit-input-placeholder {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.input-img {
+.input-checkbox-img {
   display: none;
-}
-
-.input-img:checked ~ img {
-  position: relative;
-  /* z-index: 100; */
-  width: 300px;
-  height: 300px;
 }
 
 .input-add-img {
@@ -153,10 +146,6 @@ input[type="tel"]::-webkit-input-placeholder {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-}
-
-.label-add-img:active {
-  background-color: #00acc1;
 }
 
 .add-change {
@@ -181,4 +170,39 @@ input[type="number"] {
 
 .label-input {
   font-size: smaller;
+}
+
+.img-zoom-in {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: -5rem;
+  top: -9rem;
+  display: none;
+}
+
+.input-checkbox-img:checked ~ .img-zoom-in {
+  display: flex;
+}
+
+.label-checkbox-input {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.img-profile {
+  position: relative;
+}
+
+.icon-fullscreen {
+  color: #eee;
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }

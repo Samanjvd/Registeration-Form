@@ -10,16 +10,35 @@
     <div class="main-container">
       <div>
         <div class="profile">
-          <label class="label-img">
-            <input type="checkbox" class="input-img" />
-            <img
-              src="./img/image.png"
-              alt="img"
-              width="150px"
-              height="150px"
-              class="img"
-            />
-          </label>
+          <div class="img-profile">
+            <label class="label-img">
+              <img
+                src="./img/image.png"
+                alt="img"
+                width="150px"
+                height="150px"
+                class="img"
+              />
+            </label>
+            <label class="label-checkbox-input" role="button">
+              <input type="checkbox" class="input-checkbox-img" />
+              <svg
+                class="icon-fullscreen"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M3 21v-5h2v3h3v2zm13 0v-2h3v-3h2v5zM3 8V3h5v2H5v3zm16 0V5h-3V3h5v5z"
+                />
+              </svg>
+              <div class="img-zoom-in">
+                <img src="/img/image.png" width="300px" height="300px" />
+              </div>
+            </label>
+          </div>
           <div class="profile-label">
             <label role="button" class="label delete-img" title="حذف  فایل">
               <svg
@@ -130,6 +149,7 @@
                 placeholder="شماره تلفن همراه"
                 maxlength="10"
                 class="input"
+                dir="ltr"
               />
             </label>
           </div>
@@ -142,6 +162,7 @@
                 placeholder="تلفن ثابت"
                 maxlength="10"
                 class="input num-static"
+                dir="ltr"
               />
             </label>
           </div>
@@ -156,6 +177,7 @@
                 maxlength="24"
                 class="input shaba-num"
                 required
+                dir="ltr"
               />
             </label>
           </div>
@@ -167,6 +189,7 @@
                 placeholder="کد ملی"
                 maxlength="10"
                 class="input natianal-code"
+                dir="ltr"
               />
             </label>
           </div>
@@ -189,6 +212,7 @@
                 type="number"
                 placeholder="کد پستی"
                 class="input postal-code"
+                dir="ltr"
               />
             </label>
           </div>
